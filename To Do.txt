@@ -1,0 +1,21 @@
+[ ] Create input form that takes in these parameters:
+    [ ] employee first name
+    [ ] employee last name
+    [ ] ID Number
+    [ ] job title
+    [ ] annual salary
+
+[ ] Create Submit button
+    [ ] collects form information
+    [ ] appends form info to DOM (show it on screen)
+    [ ] calculate monthly costs
+    [ ] append cost info to the DOM (show it on screen)
+        [ ] if total monthly cost >20,000, add red background color to total monthly cost
+    [ ] clear input fields
+
+[ ] Create Delete button
+    [ ] removes employee from DOM
+
+STRETCH GOALS
+[ ] add styling and/or extra functionality that fits with the theme
+[ ] once the employee is deleted, update the total cost to reflect their removal (look into .text or .data functions)
