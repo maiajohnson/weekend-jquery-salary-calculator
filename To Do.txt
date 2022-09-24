@@ -1,13 +1,13 @@
-[ ] Create input form that takes in these parameters:
-    [ ] employee first name
-    [ ] employee last name
-    [ ] ID Number
-    [ ] job title
-    [ ] annual salary
+[X] Create input form that takes in these parameters:
+    [X] employee first name
+    [X] employee last name
+    [X] ID Number
+    [X] job title
+    [X] annual salary
 
 [ ] Create Submit button
-    [ ] collects form information
-    [ ] appends form info to DOM (show it on screen)
+    [X] collects form information
+    [X] appends form info to DOM (show it on screen)
     [ ] calculate monthly costs
     [ ] append cost info to the DOM (show it on screen)
         [ ] if total monthly cost >20,000, add red background color to total monthly cost
