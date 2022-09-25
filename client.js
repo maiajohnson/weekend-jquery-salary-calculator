@@ -43,17 +43,17 @@ function inputIntoTable() {
     };
 
     $('table').append(`
-        <tr>
+        <tr class="remove">
             <td>${firstName}</td>
             <td>${lastName}</td>
             <td>${id}</td>
             <td>${title}</td>
             <td>${annualSalary}</td>
-            <td><button id="deletebtn">Delete</button></td> 
+            <td><button class="deletebtn">Delete</button></td> 
         </tr>
     `);
 
-    $('#deletebtn').on('click', deleteFromTable);
+    $('.deletebtn').on('click', deleteFromTable);
 }
 
 function deleteFromTable() {
