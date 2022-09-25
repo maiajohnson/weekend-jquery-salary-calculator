@@ -1,0 +1,26 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: mediumseagreen;
+}
+
+#submitbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
