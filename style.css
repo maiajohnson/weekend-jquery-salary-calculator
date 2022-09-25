@@ -1,11 +1,12 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: mediumseagreen;
+    background-color: rgb(195, 239, 215);
 }
 
 #submitbtn {
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 table {
     border-collapse: collapse;
@@ -13,8 +14,13 @@ table {
 table, th, td {
     border: 2px solid black;
 }
-
-th, td {
+th {
+    background-color: rgb(68, 142, 68);
+}
+tr:nth-child(odd) {
+    background-color: rgb(69, 173, 114);
+}
+th, tr, td {
     padding-left: 20px;
     padding-right: 20px;
 }
