@@ -5,7 +5,7 @@
     [X] job title
     [X] annual salary
 
-[ ] Create Submit button
+[X] Create Submit button
     [X] collects form information
     [X] appends form info to DOM (show it on screen)
     [X] calculate monthly costs
