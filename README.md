@@ -1,9 +1,16 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Weekend Jquery Salary Calculator
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+_Duration: 3 Days_
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+This application uses input boxes to create a list of employees shown on the DOM, with multiple input factors, including: first and last name, ID, title, and annual salary. Additionally, it also calculates the total monthly salary for all of the employees within the list.
+
+## Built With
+
+- Jquery
+- JavaScript
+
+## Acknowledgement
+
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
