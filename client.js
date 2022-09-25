@@ -56,4 +56,13 @@ function inputIntoTable() {
 
     $('#annualsalary').val('');
 
+    let monthlyCost = annualSalary/12;
+    let monthlyCostOutput = $('#monthlycostout');
+
+    monthlyCostOutput.append(`${monthlyCost}`);
+
+    if (monthlyCost > 20000) {
+        $('h2').css('background-color', 'red');
+        console.log(monthlyCost);
+    };
 }

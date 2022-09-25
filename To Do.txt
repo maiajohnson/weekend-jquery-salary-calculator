@@ -8,10 +8,10 @@
 [ ] Create Submit button
     [X] collects form information
     [X] appends form info to DOM (show it on screen)
-    [ ] calculate monthly costs
-    [ ] append cost info to the DOM (show it on screen)
-        [ ] if total monthly cost >20,000, add red background color to total monthly cost
-    [ ] clear input fields
+    [X] calculate monthly costs
+    [X] append cost info to the DOM (show it on screen)
+        [X] if total monthly cost >20,000, add red background color to total monthly cost
+    [X] clear input fields
 
 [ ] Create Delete button
     [ ] removes employee from DOM
