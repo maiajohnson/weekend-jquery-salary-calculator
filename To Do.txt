@@ -13,8 +13,8 @@
         [X] if total monthly cost >20,000, add red background color to total monthly cost
     [X] clear input fields
 
-[ ] Create Delete button
-    [ ] removes employee from DOM
+[X] Create Delete button
+    [X] removes employee from DOM
 
 STRETCH GOALS
 [ ] add styling and/or extra functionality that fits with the theme

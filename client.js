@@ -7,12 +7,13 @@ function readyNow() {
 
 
     $('#submitbtn').on('click', inputIntoTable);
+   
 }
 
 function inputIntoTable() {
    
     let firstName = $('#firstname').val();
-    let firstNameOutput = $('#firstnameout');
+    let firstNameOutput = $('#tableinfo');
 
     firstNameOutput.append(`
         <td>${firstName}</td>
@@ -21,7 +22,7 @@ function inputIntoTable() {
     $('#firstname').val('');
 
     let lastName = $('#lastname').val();
-    let lastNameOutput = $('#lastnameout');
+    let lastNameOutput = $('#tableinfo');
 
     lastNameOutput.append(`
         <td>${lastName}</td>
@@ -30,7 +31,7 @@ function inputIntoTable() {
     $('#lastname').val('');
 
     let id = $('#id').val();
-    let idOutput= $('#idout');
+    let idOutput= $('#tableinfo');
 
     idOutput.append(`
         <td>${id}</td>
@@ -39,7 +40,7 @@ function inputIntoTable() {
     $('#id').val('');
 
     let title = $('#jobtitle').val();
-    let titleOutput = $('#jobtitleout');
+    let titleOutput = $('#tableinfo');
 
     titleOutput.append(`
         <td>${title}</td>
@@ -48,7 +49,7 @@ function inputIntoTable() {
     $('#jobtitle').val('');
 
     let annualSalary = $('#annualsalary').val();
-    let annualSalaryOutput = $('#annualsalaryout');
+    let annualSalaryOutput = $('#tableinfo');
 
     annualSalaryOutput.append(`
         <td>${annualSalary}</td>
@@ -65,4 +66,14 @@ function inputIntoTable() {
         $('h2').css('background-color', 'red');
         console.log(monthlyCost);
     };
+
+    $('#tableinfo').append(`
+        <td><button id="deletebtn">Delete</button></td>
+    `);
+
+    $('#deletebtn').on('click', deleteFromTable);
+}
+
+function deleteFromTable() {
+   $(this).parent().parent().remove();
 }
