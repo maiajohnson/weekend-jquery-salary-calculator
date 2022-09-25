@@ -13,47 +13,22 @@ function readyNow() {
 function inputIntoTable() {
    
     let firstName = $('#firstname').val();
-    let firstNameOutput = $('#tableinfo');
 
-    firstNameOutput.append(`
-        <td>${firstName}</td>
-    `);
-
-    $('#firstname').val('');
+     $('#firstname').val('');
 
     let lastName = $('#lastname').val();
-    let lastNameOutput = $('#tableinfo');
-
-    lastNameOutput.append(`
-        <td>${lastName}</td>
-    `);
 
     $('#lastname').val('');
 
     let id = $('#id').val();
-    let idOutput= $('#tableinfo');
-
-    idOutput.append(`
-        <td>${id}</td>
-    `);
 
     $('#id').val('');
 
     let title = $('#jobtitle').val();
-    let titleOutput = $('#tableinfo');
-
-    titleOutput.append(`
-        <td>${title}</td>
-    `);
 
     $('#jobtitle').val('');
 
     let annualSalary = $('#annualsalary').val();
-    let annualSalaryOutput = $('#tableinfo');
-
-    annualSalaryOutput.append(`
-        <td>${annualSalary}</td>
-    `);
 
     $('#annualsalary').val('');
 
@@ -67,8 +42,15 @@ function inputIntoTable() {
         console.log(monthlyCost);
     };
 
-    $('#tableinfo').append(`
-        <td><button id="deletebtn">Delete</button></td>
+    $('table').append(`
+        <tr>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td>${id}</td>
+            <td>${title}</td>
+            <td>${annualSalary}</td>
+            <td><button id="deletebtn">Delete</button></td> 
+        </tr>
     `);
 
     $('#deletebtn').on('click', deleteFromTable);
