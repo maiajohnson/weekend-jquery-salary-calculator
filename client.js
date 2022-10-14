@@ -8,50 +8,29 @@ function readyNow() {
 
     $('#submitbtn').on('click', inputIntoTable);
    
+    $('.deletebtn').on('click', deleteFromTable);
 }
-// Let employeeList = [];
+let employeeList = [];
 
 function inputIntoTable() {
-   
-    let firstName = $('#firstname').val();
-
-     $('#firstname').val('');
-
-    let lastName = $('#lastname').val();
-
-    $('#lastname').val('');
-
-    let id = $('#id').val();
-
-    $('#id').val('');
-
-    let title = $('#jobtitle').val();
-
-    $('#jobtitle').val('');
-
-    let annualSalary = Number($('#annualsalary').val());
-
-    $('#annualsalary').val('');
-
-    /* Can also put the values into an object array:
 
     let newEmployee = {
         firstName: $('#firstname').val(),
         lastName: $('#lastname').val(),
         id: $('#id').val(),
-        title: $('#title').val(),
+        title: $('#jobtitle').val(),
         annualSalary: Number($('#annualsalary').val())
     }
 
     employeeList.push(newEmployee);
 
     render();
-    */
+    
+    // turn salary to number:
+    //annualSalary = Number(annualSalary)
 
-     /* turn salary to number:
-    annualSalary = Number(annualSalary)
-
-        Calculate Monthly Total:
+    // Calculate Monthly Total:
+    let monthlyCostOutput = $('#monthlycostout');
     let monthlyCost = 0;
     for (let emply of employeeList) {
         monthlyCost += emply.annualSalary/12;
@@ -61,33 +40,10 @@ function inputIntoTable() {
     if (monthlyCost > 20000) {
         $('h2').css('background-color', 'red');
     }
-    */
-
-    let monthlyCost = annualSalary/12;
     
-    let monthlyCostOutput = $('#monthlycostout');
-
-    monthlyCostOutput.append(`${monthlyCost}`);
-
-    if (monthlyCost > 20000) {
-        $('h2').css('background-color', 'red');
-        console.log(monthlyCost);
-    };
-
-    $('table').append(`
-        <tr class="remove">
-            <td>${firstName}</td>
-            <td>${lastName}</td>
-            <td>${id}</td>
-            <td>${title}</td>
-            <td>${annualSalary}</td>
-            <td><button class="deletebtn">Delete</button></td> 
-        </tr>
-    `);
-
-    $('.deletebtn').on('click', deleteFromTable);
 }
-/* The render function:
+
+// The render function:
 
 function render() {
     $('#employeetable').empty();
@@ -109,7 +65,52 @@ function render() {
         `)
     }
 }
-*/
+
 function deleteFromTable() {
    $(this).parent().parent().remove();
 }
+
+
+    // let monthlyCost = annualSalary/12;
+    
+   
+
+    // monthlyCostOutput.append(`${monthlyCost}`);
+
+    // if (monthlyCost > 20000) {
+    //     $('h2').css('background-color', 'red');
+    //     console.log(monthlyCost);
+    // };
+
+    // $('table').append(`
+    //     <tr class="remove">
+    //         <td>${firstName}</td>
+    //         <td>${lastName}</td>
+    //         <td>${id}</td>
+    //         <td>${title}</td>
+    //         <td>${annualSalary}</td>
+    //         <td><button class="deletebtn">Delete</button></td> 
+    //     </tr>
+    // `);
+
+ // let firstName = $('#firstname').val();
+
+    //  $('#firstname').val('');
+
+    // let lastName = $('#lastname').val();
+
+    // $('#lastname').val('');
+
+    // let id = $('#id').val();
+
+    // $('#id').val('');
+
+    // let title = $('#jobtitle').val();
+
+    // $('#jobtitle').val('');
+
+    // let annualSalary = Number($('#annualsalary').val());
+
+    // $('#annualsalary').val('');
+
+    //Can also put the values into an object array:
