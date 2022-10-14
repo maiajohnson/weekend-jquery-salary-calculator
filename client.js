@@ -8,7 +8,7 @@ function readyNow() {
 
     $('#submitbtn').on('click', inputIntoTable);
    
-    $('.deletebtn').on('click', deleteFromTable);
+  
 }
 let employeeList = [];
 
@@ -25,9 +25,6 @@ function inputIntoTable() {
     employeeList.push(newEmployee);
 
     render();
-    
-    // turn salary to number:
-    //annualSalary = Number(annualSalary)
 
     // Calculate Monthly Total:
     let monthlyCostOutput = $('#monthlycostout');
@@ -42,7 +39,7 @@ function inputIntoTable() {
         $('h2').css('background-color', 'red');
     }
     
-}
+};
 
 // The render function:
 
@@ -64,54 +61,12 @@ function render() {
                 </td>
             </tr>
         `)
-    }
-}
+    };
+
+    $('.deleteBtn').on('click', deleteFromTable);
+};
 
 function deleteFromTable() {
+    console.log('delete the thing');
    $(this).parent().parent().remove();
-}
-
-
-    // let monthlyCost = annualSalary/12;
-    
-   
-
-    // monthlyCostOutput.append(`${monthlyCost}`);
-
-    // if (monthlyCost > 20000) {
-    //     $('h2').css('background-color', 'red');
-    //     console.log(monthlyCost);
-    // };
-
-    // $('table').append(`
-    //     <tr class="remove">
-    //         <td>${firstName}</td>
-    //         <td>${lastName}</td>
-    //         <td>${id}</td>
-    //         <td>${title}</td>
-    //         <td>${annualSalary}</td>
-    //         <td><button class="deletebtn">Delete</button></td> 
-    //     </tr>
-    // `);
-
- // let firstName = $('#firstname').val();
-
-    //  $('#firstname').val('');
-
-    // let lastName = $('#lastname').val();
-
-    // $('#lastname').val('');
-
-    // let id = $('#id').val();
-
-    // $('#id').val('');
-
-    // let title = $('#jobtitle').val();
-
-    // $('#jobtitle').val('');
-
-    // let annualSalary = Number($('#annualsalary').val());
-
-    // $('#annualsalary').val('');
-
-    //Can also put the values into an object array:
+};
