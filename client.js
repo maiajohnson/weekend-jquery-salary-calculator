@@ -35,7 +35,8 @@ function inputIntoTable() {
     for (let emply of employeeList) {
         monthlyCost += emply.annualSalary/12;
     }
-        monthlyCostOutput.append(`${monthlyCost}`);
+    monthlyCostOutput.empty();
+    monthlyCostOutput.append(`${monthlyCost}`);
 
     if (monthlyCost > 20000) {
         $('h2').css('background-color', 'red');
